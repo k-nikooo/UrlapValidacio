@@ -5,7 +5,7 @@
         <title>Saját név</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="stilus.css" rel="stylesheet" type="text/css"/>
         <script src="urlapkezeles.js" type="text/javascript"></script>
     </head>
     <body>
@@ -26,8 +26,8 @@
                         <div class="urlapelem"   >
                             <label for="nev">Név</label>
                             <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+                            <br>
                         </div> 
-                        <br>
                         <div id="em">
                             <label for="mail">E-mail</label>
                             <input type="email" name="email" id="email" required placeholder="valaki@vmi.hu">
@@ -38,26 +38,55 @@
                             <input type="email" name="email2" id="email2" required placeholder="valaki@vmi.hu">
                             <br>
                         </div>
+                        <div id="tel">
+                            <label for="telefonsz">Telefonszám</label>
+                            <input type="number" name="telefonsz" id="telefonsz" placeholder="+36-30-000-0000">
+                        </div>
                     </fieldset>
-                    <input type="button" id="kuld" value="Küld">
-                    </article>
-                    <aside>
-                        <section>
-                            <h3>
-                                Űrlap validáció</h3>
-                            <p>
-                                Itt jelenik majd meg, hoyg van-e hiba az űrlap kitöltésekor. Például űres mező, vagy nem megfelelő formátumú e-mail cím, weboldal, telefonszám.
-                            </p>
-                        </section>
-                        <section>
-                            <h3>Űrlap adatok</h3>
-                            <p>
-                                Itt jelennek majd meg a z űrlapon megadott adatok  </p>
-                        </section>
-                    </aside>
-                    <footer>
-                        <p>Céggel kapcsolat információk</p>
-                    </footer>
-                    </main>
-                    </body>
-                    </html>
+                    <fieldset>
+                        <div>
+                            <label>Weboldal</label>
+                            <input type="text" name="webcim" id="webcim" placeholder="http://valami.hu">
+                            <br>
+                        </div>
+                        <div>
+                            <label>Prioritás</label>
+                            <select name="prioritas" id="prioritas">
+                                <option value="magas">magas</option>
+                                <option value="alacsony" selected>alacsony</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div>
+                            <label>Üzenet</label>
+                            <textarea cols="30" rows="5" name="uzenet" id="uzenet"></textarea>
+                        </div>
+                    </fieldset>
+                    <div id="kuldes">
+                        <input type="button" id="kuld" value="Küld">
+                        <br>
+                    </div>
+                    <div id="torles">
+                        <input type="button" id="torol" value="Töröl">
+                    </div>
+            </article>
+            <aside>
+                <section>
+                    <h3>
+                        Űrlap validáció</h3>
+                    <p>
+                        Itt jelenik majd meg, hoyg van-e hiba az űrlap kitöltésekor. Például űres mező, vagy nem megfelelő formátumú e-mail cím, weboldal, telefonszám.
+                    </p>
+                </section>
+                <section>
+                    <h3>Űrlap adatok</h3>
+                    <p>
+                        Itt jelennek majd meg a z űrlapon megadott adatok  </p>
+                </section>
+            </aside>
+            <footer>
+                <p>Céggel kapcsolat információk</p>
+            </footer>
+        </main>
+    </body>
+</html>

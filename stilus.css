@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+header, nav, article, aside, footer{
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 2px;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "n a as"
+        "f f f";
+}
+
+header{
+    grid-area: h;
+    background: #c3835a;
+}
+
+nav{
+    grid-area: n;
+    background: #72625e;
+    display: grid;
+    grid-template-rows: 20px 20px 20px;
+    width: 100px;
+}
+
+nav a{
+    color: #fdf3d8;
+    text-decoration: none;
+}
+
+article{
+    grid-area: a;
+    background: #fadd8a;
+    width: 400px;
+}
+
+aside{
+    grid-area: as;
+    background: #514a64;
+}
+
+section{
+    background: #e5ddc7;
+    margin: 5px;
+}
+
+footer{
+    grid-area: f;
+    background: #d9b78d;
+}
+
+fieldset{
+    margin: 5px;
+    border-radius: 5px;
+}
+
+label {
+    float: left;
+    width: 100px;
+    margin: 5px;
+    text-align: right;
+}
+
+form br {
+    clear: left;
+}
+
+textarea {
+    width: 60%;
+    /*margin-top: 2px;*/
+    border-radius: 2px;
+}
+
+fieldset input{
+    width: 60%;
+}
+
+#kuldes{
+    float: right;
+    width: 65%;
+}
+
+#kuldes input{
+    width: 200px;
+}
+
+#torol{
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+aside section:nth-child(2) p{
+    color: #c58463;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px){
+    
+}
