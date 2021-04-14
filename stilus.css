@@ -26,7 +26,8 @@ nav{
     background: #72625e;
     display: grid;
     grid-template-rows: 20px 20px 20px;
-    width: 100px;
+    padding-left: 5px;
+    padding-right: 50px; 
 }
 
 nav a{
@@ -37,7 +38,7 @@ nav a{
 article{
     grid-area: a;
     background: #fadd8a;
-    width: 400px;
+    /*width: 400px;*/
 }
 
 aside{
@@ -87,11 +88,11 @@ fieldset input{
 }
 
 #kuldes input{
-    width: 200px;
+    width: 90%;
 }
 
 #torol{
-    width: 100px;
+    width: 30%;
     margin-top: 25px;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -103,5 +104,36 @@ aside section:nth-child(2) p{
 }
 
 @media only screen and (max-width: 800px){
-    
+    main{
+        grid-template-areas:
+            "h"
+            "n"
+            "a"
+            "as"
+            "f";
+    }
+    fieldset input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    label {text-align: left;}
+    #pioritasCim{width: 60px;}
+    #prioritas{margin-top: 5px;}
+    textarea {width: 100%;}
+
+    #torol{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: -10px;
+    }
+
+    #kuldes{
+        float: none;
+        width: 50%;
+        margin: auto;
+    }
+    #torles{
+        width: 80%;
+        margin: auto;
+    }
 }
