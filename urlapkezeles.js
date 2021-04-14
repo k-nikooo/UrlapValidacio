@@ -37,15 +37,16 @@ function validalas(){
         ID("email").style.border="3px solid red";
     } else {
         ID("email").style.border="none";
-    }
-    
-    if(ID("email").value === ID("email2").value){
+        if(ID("email").value === ID("email2").value){
         urlapAdat+="Email: "+ID("email").value+"<br>";
         ID("email2").style.border="none";
     } else {
         hiba+="Nem egyforma a két e-mail.";
         ID("email2").style.border="3px solid red";
     }
+    }
+    
+    
     
     console.log(hiba);
     $("aside section:nth-child(1) p")[0].innerHTML=hiba;
